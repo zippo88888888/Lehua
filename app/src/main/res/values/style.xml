@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="BaseTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <!-- 修改点击水波纹效果的颜色 -->
+        <item name="colorControlHighlight">@color/ripple_color</item>
+        <!-- 修改单选，多选的水波纹颜色点击效果 -->
+        <item name="colorAccent">@color/baseColor</item>
+        <!-- 设置状态栏的颜色 -->
+        <item name="colorPrimaryDark">@color/baseColor</item>
+        <!-- 标题栏颜色 -->
+        <item name="colorPrimary">@color/baseColor</item>
+        <!-- ActionBar上Menu的字体颜色 -->
+        <item name="actionMenuTextColor">@color/white</item>
+        <!-- 统一设置Activity背景色 -->
+        <item name="android:windowBackground">@color/bg_color</item>
+    </style>
+
+    <!-- App 样式 -->
+    <style name="AppTheme" parent="BaseTheme">
+        <!-- 沉浸式状态栏实现 -->
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+
+    <style name="SplashTheme" parent="AppTheme">
+        <item name="android:windowBackground">@drawable/splash_page</item>
+    </style>
+
+    <style name="ToolbarTheme" parent="@style/ThemeOverlay.AppCompat.ActionBar">
+        <item name="actionMenuTextColor">@color/white</item>
+        <item name="android:textColorPrimary">@color/white</item>
+    </style>
+
+    <style name="ToolbarBlackTheme" parent="ToolbarTheme">
+        <item name="android:textColorPrimary">@color/black</item>
+    </style>
+
+    <style name="ToolbarPopupTheme" parent="@style/ThemeOverlay.AppCompat.Light">
+        <item name="actionOverflowMenuStyle">@style/OverflowMenuStyle</item>
+    </style>
+
+    <style name="OverflowMenuStyle" parent="Widget.AppCompat.Light.PopupMenu.Overflow">
+        <item name="overlapAnchor">true</item>
+    </style>
+
+    <style name="ToolbarTitleTextStyle" parent="@style/TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="Common_Dialog" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="No_Fillet_Dialog" parent="Common_Dialog">
+        <item name="android:windowBackground">@color/white</item>
+    </style>
+
+    <style name="Fillet_Dialog" parent="Common_Dialog">
+        <item name="android:windowBackground">@drawable/dialog_fillet_shape</item>
+    </style>
+
+</resources>

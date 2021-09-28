@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/dialog_set_title"
+        style="@style/Base.DialogWindowTitle.AppCompat"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:paddingBottom="15dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:paddingTop="15dp"
+        android:text="@string/set" />
+
+    <TextView
+        android:id="@+id/dialog_set_durationTxt"
+        android:layout_width="80dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="20dp"
+        android:gravity="center|start"
+        android:text="@string/duration"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toTopOf="@+id/dialog_set_durationEdit"
+        app:layout_constraintBottom_toBottomOf="@+id/dialog_set_durationEdit"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/dialog_set_durationEdit"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:inputType="number"
+        android:maxLines="1"
+        android:maxLength="4"
+        android:imeOptions="actionNext"
+        android:hint="@string/input_duration"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:layout_marginTop="7dp"
+        app:layout_constraintTop_toBottomOf="@+id/dialog_set_title"
+        app:layout_constraintStart_toEndOf="@+id/dialog_set_durationTxt"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="20dp" />
+
+    <TextView
+        android:id="@+id/dialog_set_countTxt"
+        android:layout_width="80dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="20dp"
+        android:gravity="center|start"
+        android:text="@string/count"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toTopOf="@+id/dialog_set_countEdit"
+        app:layout_constraintBottom_toBottomOf="@+id/dialog_set_countEdit"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/dialog_set_countEdit"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:inputType="number"
+        android:maxLines="1"
+        android:maxLength="4"
+        android:imeOptions="actionDone"
+        android:hint="@string/input_count"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:layout_marginTop="7dp"
+        app:layout_constraintTop_toBottomOf="@+id/dialog_set_durationEdit"
+        app:layout_constraintStart_toEndOf="@+id/dialog_set_countTxt"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="20dp" />
+
+    <TextView
+        android:id="@+id/dialog_set_vibratorTitle"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:gravity="center|start"
+        android:layout_marginTop="7dp"
+        android:text="@string/vibrator_type"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dialog_set_countEdit"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"/>
+
+    <RadioGroup
+        android:id="@+id/dialog_set_vibratorGroup"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:layout_marginTop="7dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dialog_set_vibratorTitle"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/dialog_set_vibratorType1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:textSize="15sp"
+            android:text="@string/vibrator_type1" />
+
+        <RadioButton
+            android:id="@+id/dialog_set_vibratorType2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:textSize="15sp"
+            android:text="@string/vibrator_type2" />
+
+        <RadioButton
+            android:id="@+id/dialog_set_vibratorType3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:textSize="15sp"
+            android:text="@string/vibrator_type3" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/dialog_set_downBtn"
+        style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dialog_set_vibratorGroup"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="7dp"
+        android:text="@string/down"
+        android:textColor="@color/baseColor" />
+
+    <Button
+        android:id="@+id/dialog_set_cancelBtn"
+        style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toStartOf="@+id/dialog_set_downBtn"
+        app:layout_constraintTop_toBottomOf="@+id/dialog_set_vibratorGroup"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="7dp"
+        android:text="@string/cancel"
+        android:textColor="@color/baseColor" />
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="7dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dialog_set_downBtn"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

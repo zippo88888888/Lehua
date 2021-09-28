@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_main_set"
+        android:title="@string/set"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/menu_main_study"
+        android:title="@string/study"
+        android:visible="false"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/menu_main_theme"
+        android:title="@string/theme"
+        android:visible="false"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/menu_main_about"
+        android:title="@string/about"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/menu_main_speak"
+        android:title="@string/speak"
+        app:showAsAction="never"/>
+
+</menu>

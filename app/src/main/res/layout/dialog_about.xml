@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/Base.DialogWindowTitle.AppCompat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="20dp"
+        android:paddingTop="15dp"
+        android:paddingEnd="20dp"
+        android:paddingBottom="15dp"
+        android:text="@string/about" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/baseColor"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:gravity="center|start"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:text="@string/about_info"
+            android:textColor="@color/white"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/dialog_about_addressTxt"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center|start"
+        android:background="?selectableItemBackground"
+        tools:text="本应用已开源，点击访问项目托管地址"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:layout_marginTop="7dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"/>
+
+    <TextView
+        android:id="@+id/dialog_about_telTxt"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center|start"
+        android:background="?selectableItemBackground"
+        tools:text="想说点什么吗？点击获取联系方式"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="@string/v"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="7dp" />
+
+</LinearLayout>

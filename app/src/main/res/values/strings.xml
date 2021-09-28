@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">乐花运动</string>
+    <string name="set">设置</string>
+    <string name="study">教程</string>
+    <string name="theme">主题</string>
+    <string name="about">关于</string>
+    <string name="speak">说明</string>
+    <string name="zero">0</string>
+    <string name="jiajin">夹紧</string>
+    <string name="fangsong">放松</string>
+    <string name="start">开始</string>
+    <string name="end">结束</string>
+    <string name="duration">间隔</string>
+    <string name="input_duration">请输入间隔（单位：毫秒）</string>
+    <string name="count">个数</string>
+    <string name="input_count">一次做多少个</string>
+    <string name="vibrator_type">震动模式</string>
+    <string name="vibrator_type1">模式一</string>
+    <string name="vibrator_type2">模式二</string>
+    <string name="vibrator_type3">模式三</string>
+    <string name="down">确定</string>
+    <string name="cancel">取消</string>
+    <string name="about_info">提肛运动是指有规律地往上提收肛门，然后放松，一提一松就是提肛运动。站、坐、行均可进行，每次做提肛运动50次左右，
+        持续5－10分钟即可。提肛运动可以促进局部血液循环，预防痔疮等肛周疾病（来自百度百科）</string>
+    <string name="v">作者：好大一个月&amp;虚空兽</string>
+    <string name="success_title">恭喜完成</string>
+    <string name="success_msg">每天一到两次，随时随地，简简单单！花好我也好，对TA会更好，这样世界会更美好！</string>
+    <string name="tip_info">作者承诺，本项目(只针对当前App)绝对不收集任何个人信息，不需要向用户申请任何权限，不需要网络连接，真正意义上的三无App！也不怕被查，因为根本没有！</string>
+    <string name="i_know">我知道了</string>
+</resources>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dialogRadius">3dp</dimen>
+    <dimen name="statusBarHeight">10dp</dimen>
+    <dimen name="toolBarHeight">56dp</dimen>
+</resources>
